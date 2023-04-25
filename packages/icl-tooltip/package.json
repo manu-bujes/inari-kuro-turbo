@@ -1,0 +1,26 @@
+{
+  "name": "@inari/icl-tooltip",
+  "version": "0.0.1",
+  "description": "",
+  "type": "module",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    },
+    "./src": {
+      "import": "./src/index.js"
+    }
+  },
+  "devDependencies": {
+    "@vueuse/core": "^9.13.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://nexus.tech.inari.io/repository/npm-private/"
+  },
+  "scripts": {
+    "build": "vite build -c ../../tools/config/vite.config.base.js"
+  }
+}

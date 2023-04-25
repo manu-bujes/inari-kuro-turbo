@@ -1,0 +1,9 @@
+{
+  "extends": ["../../.eslintrc.json"],
+  "overrides": [
+    {
+      "files": ["*.vue", "*.js", "*.jsx"],
+      "rules": {}
+    }
+  ]
+}

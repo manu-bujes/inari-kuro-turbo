@@ -1,0 +1,86 @@
+.icl-icon {
+  display: flex;
+  transform: scale(1); // Avoid having pixeleted svg on browser when too small
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+
+  &.default {
+    width: 24px;
+    height: 24px;
+  }
+
+  &.small {
+    width: 18px;
+    height: 18px;
+  }
+
+  &.medium {
+    width: 32px;
+    height: 32px;
+  }
+
+  &.large {
+    width: 40px;
+    height: 40px;
+  }
+
+  &.xlarge {
+    width: 60px;
+    height: 60px;
+  }
+
+  &.big {
+    width: 96px;
+    height: 96px;
+  }
+
+  &--is-primary {
+    color: var(--primary);
+  }
+
+  &--is-secondary {
+    color: var(--secondary);
+  }
+
+  &--is-grey {
+    color: var(--grey);
+  }
+
+  &--is-info {
+    color: var(--info);
+  }
+
+  &--is-success {
+    color: var(--success);
+  }
+
+  &--is-warning {
+    color: var(--warning);
+  }
+
+  &--is-error {
+    color: var(--error);
+  }
+
+  &--is-clear {
+    color: var(--clear);
+  }
+
+  &--is-white {
+    color: var(--white);
+  }
+
+  &.disabled {
+    opacity: .4;
+    cursor: initial;
+  }
+
+  &.cursor-pointer:not(.disabled) {
+    cursor: pointer;
+  }
+
+  &.cursor-default {
+    cursor: default;
+  }
+}

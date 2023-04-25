@@ -1,0 +1,20 @@
+{
+  "name": "@inari/icl-loader",
+  "version": "0.0.1",
+  "description": "",
+  "type": "module",
+  "module": "./index.js",
+  "exports": {
+    ".": {
+      "import": "./index.js"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://nexus.tech.inari.io/repository/npm-private/"
+  },
+  "scripts": {
+    "build": "vite build -c ../../tools/config/vite.config.base.js"
+  }
+}

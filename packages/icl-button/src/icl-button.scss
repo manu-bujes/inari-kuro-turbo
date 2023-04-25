@@ -1,0 +1,222 @@
+.icl-button {
+  box-sizing: border-box;
+  transition: all .2s ease;
+  border-radius: 4px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  cursor: pointer;
+
+  .icl-icon {
+    &.prepend-icon {
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+    &.append-icon {
+      vertical-align: middle;
+      margin-left: 10px;
+    }
+  }
+  .content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .actions-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid var(--white);
+    height: 100%;
+    padding: 0 10px;
+    &>.icl-icon {
+      width: 10px;
+      height: 7px;
+    }
+    .actions-wrapper {
+      display: flex;
+      flex-direction: column;
+      .action-item {
+        display: flex;
+        height: 30px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        border-bottom: 1px solid var(--white);
+        .icl-icon {
+          color: var(--white);
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  &.disabled {
+    cursor: default;
+  }
+
+  &.primary {
+    background: var(--primary);
+    color: var(--white);
+    border: solid 1px var(--primary);
+    &.disabled {
+      background: var(--primary-200);
+      border: solid 1px var(--primary-200);
+    }
+    &:hover:not(.disabled) {
+      background: var(--primary-600);
+      border: solid 1px var(--primary-600);
+    }
+    .icl-icon {
+      color: var(--white);
+    }
+  }
+
+  &.secondary {
+    background: var(--white);
+    color: var(--primary);
+    border: solid 1px var(--primary);
+    .actions-button {
+      border-left: solid 1px var(--primary);
+    }
+    &.disabled {
+      color: var(--primary-300);
+      border: solid 1px var(--primary-300);
+      .icl-icon {
+        color: var(--primary-300);
+      }
+    }
+    &:hover:not(.disabled) {
+      background: var(--secondary-300);
+      border: solid 1px var(--primary);
+    }
+    .icl-icon {
+      color: var(--primary);
+    }
+  }
+
+  &.success {
+    background: var(--success);
+    color: var(--white);
+    border: solid 1px var(--success);
+    &.disabled {
+      background: var(--success-200);
+      border: solid 1px var(--success-200);
+    }
+    &:hover:not(.disabled) {
+      background: var(--success-600);
+      border: solid 1px var(--success-600);
+    }
+    .icl-icon {
+      color: var(--white);
+    }
+  }
+
+  &.error {
+    background: var(--error);
+    color: var(--white);
+    border: solid 1px var(--error);
+    &.disabled {
+      background: var(--error-200);
+      border: solid 1px var(--error-200);
+    }
+    &:hover:not(.disabled) {
+      background: var(--error-600);
+      border: solid 1px var(--error-600);
+    }
+    .icl-icon {
+      color: var(--white);
+    }
+  }
+
+  &.warning {
+    background: var(--warning);
+    color: var(--white);
+    border: solid 1px var(--warning);
+    &.disabled {
+      background: var(--warning-200);
+      border: solid 1px var(--warning-200);
+    }
+    &:hover:not(.disabled) {
+      background: var(--warning-600);
+      border: solid 1px var(--warning-600);
+    }
+    .icl-icon {
+      color: var(--white);
+    }
+  }
+
+  &.grey {
+    background: var(--grey-500);
+    color: var(--white);
+    border: solid 1px var(--grey-500);
+    &.disabled {
+      background: var(--grey-200);
+      border: solid 1px var(--grey-200);
+      color: var(--primary-300);
+      .icl-icon {
+        color: var(--primary-300);
+      }
+    }
+    &:hover:not(.disabled) {
+      background: var(--grey-600);
+      border: solid 1px var(--grey-600);
+    }
+    .icl-icon {
+      color: var(--white);
+    }
+  }
+
+  &.small {
+    height: 24px;
+    font-size: 12px;
+    font-weight: 400;
+    .content {
+      padding: 0 16px;
+      .icl-icon {
+        height: 13px;
+        width: 13px;
+      }
+    }
+    &.has-actions {
+      padding-right: 0px;
+    }
+  }
+  &.medium {
+    height: 32px;
+    font-size: 14px;
+    font-weight: 400;
+    .content {
+      padding: 0 16px;
+      .icl-icon {
+        height: 16px;
+        width: 16px;
+      }
+    }
+    &.has-actions {
+      padding-right: 0px;
+    }
+  }
+  &.large {
+    height: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    .content {
+      padding: 0 16px;
+      .icl-icon {
+        height: 19px;
+        width: 19px;
+      }
+    }
+    &.has-actions {
+      padding-right: 0px;
+    }
+  }
+  &.full-width {
+    width: 100%;
+  }
+  &.uppercase {
+    text-transform: uppercase;
+  }
+}

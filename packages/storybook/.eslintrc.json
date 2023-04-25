@@ -1,0 +1,10 @@
+{
+  "extends": ["../../.eslintrc.json", "plugin:storybook/recommended"],
+  "ignorePatterns": ["!**/*"],
+  "overrides": [
+    {
+      "files": ["*.vue", "*.js", "*.jsx"],
+      "rules": {}
+    }
+  ]
+}
