@@ -1,6 +1,6 @@
 {
   "name": "@inari/icl-icon",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "",
   "type": "module",
   "module": "./dist/index.js",
