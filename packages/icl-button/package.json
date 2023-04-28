@@ -1,6 +1,6 @@
 {
   "name": "@inari/icl-button",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "type": "module",
   "module": "./dist/index.js",
@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@inari/assets": "^0.0.1",
-    "@inari/icl-icon": "^0.1.0",
+    "@inari/icl-icon": "^0.2.0",
     "@inari/icl-tooltip": "^0.1.0"
   }
 }
