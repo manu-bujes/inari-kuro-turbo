@@ -1,0 +1,21 @@
+{
+  "branches": ["master", "next", "feature/versioning-with-lerna"],
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    ["semantic-release-lerna", { "generateNotes": true }],
+    "@semantic-release/changelog",
+    [
+      "@semantic-release/git",
+      {
+        "assets": [
+          "CHANGELOG.md",
+          "lerna.json",
+          "package.json",
+          "pnpm-lock.json",
+          "packages/*/package.json",
+          "packages/*/pnpm-lock.json"
+        ]
+      }
+    ]
+  ]
+}
