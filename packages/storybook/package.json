@@ -5,6 +5,7 @@
   "main": "index.js",
   "author": "",
   "license": "ISC",
+  "private": "true",
   "dependencies": {
     "react": "^18.2.0",
     "@inari/icl-loader": "^0.0.3"
