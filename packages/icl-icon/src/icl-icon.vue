@@ -7,7 +7,7 @@ export default {
 <script setup>
 const props = defineProps({
   /**
-   * Icon component displayed.
+   * Icon component displayed..
    */
   icon: {
     required: true,
