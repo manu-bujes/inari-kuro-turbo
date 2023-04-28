@@ -2,7 +2,7 @@
   "branches": ["master", "next", "feature/versioning-with-lerna"],
   "plugins": [
     "@semantic-release/commit-analyzer",
-    ["semantic-release-lerna", { "generateNotes": true }],
+    ["semantic-release-lerna", { "generateNotes": true, "npmVerifyAuth": false }],
     "@semantic-release/changelog",
     [
       "@semantic-release/git",
