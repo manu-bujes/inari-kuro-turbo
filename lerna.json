@@ -3,5 +3,10 @@
   "useWorkspaces": true,
   "npmClient": "pnpm",
   "version": "independent",
-  "useNx": true
+  "useNx": true,
+  "command": {
+    "version": {
+      "allowBranch": ["main", "feature/*"]
+    }
+  }
 }
