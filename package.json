@@ -6,7 +6,7 @@
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "version": "lerna version --conventional-commits",
+    "version": "lerna version --conventional-commits --no-private",
     "publish": "lerna publish --no-private"
   },
   "dependencies": {
