@@ -2,12 +2,13 @@
   "name": "inari-kuro-turbo",
   "private": true,
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
+    "build": "lerna run build",
+    "dev": "lerna run dev",
+    "lint": "lerna run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "version": "lerna version --conventional-commits --no-private --no-push",
-    "publish": "lerna publish --no-private"
+    "publish": "lerna publish --no-private",
+    "graph": "nx graph"
   },
   "dependencies": {
     "vue": "^3.2.45"

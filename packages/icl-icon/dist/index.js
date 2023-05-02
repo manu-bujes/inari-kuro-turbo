@@ -18,7 +18,7 @@ const __default__ = {
 const _sfc_main = /* @__PURE__ */ Object.assign(__default__, {
   props: {
     /**
-     * Icon component used.
+     * Icon component displayed..
      */
     icon: {
       required: true,
