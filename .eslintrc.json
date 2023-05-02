@@ -8,7 +8,6 @@
     "vitest-globals/env": true
   },
   "extends": [
-    "turbo",
     "eslint:recommended",
     "plugin:vue/vue3-recommended", 
     "plugin:vitest-globals/recommended", 

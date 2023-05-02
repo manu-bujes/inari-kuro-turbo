@@ -16,8 +16,7 @@
   },
   "scripts": {
     "build": "vite build -c ../../tools/config/vite.config.base.js",
-    "lint": "eslint",
-    "preinstall": "npx only-allow pnpm"
+    "lint": "eslint"
   },
   "dependencies": {
     "@inari/assets": "^0.0.1",
