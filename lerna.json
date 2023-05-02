@@ -6,7 +6,7 @@
   "useNx": true,
   "command": {
     "version": {
-      "allowBranch": ["main"]
+      "allowBranch": ["main", "feature/versioning-with-lerna"]
     }
   }
 }
