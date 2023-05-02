@@ -6,7 +6,7 @@
   "useNx": true,
   "command": {
     "version": {
-      "allowBranch": ["main", "feature/*"]
+      "allowBranch": ["main"]
     }
   }
 }
