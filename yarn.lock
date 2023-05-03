@@ -1188,6 +1188,11 @@
   resolved "https://nexus.tech.inari.io/repository/npm-private/@inari/assets/-/assets-0.0.1.tgz#9492209bcceebe8300813cfd2b01bc317ce364ed"
   integrity sha512-UfFWU+x9DBkQ5N3zyAKlCPQpVrmhVPiTvJH7+FUoqHvm++k2JDv1qIAqpzx9DRAbvGBr5N4copRkCmJSM4Iw9Q==
 
+"@inari/icl-loader@^0.0.3":
+  version "0.0.3"
+  resolved "https://nexus.tech.inari.io/repository/npm-private/@inari/icl-loader/-/icl-loader-0.0.3.tgz#eb8f74cbb7d91fa6546d61e6ca18aab76695051b"
+  integrity sha512-biJjcqp6E86nRYoXv5Lt7PArkzblL2bJJgONEYlu8IfEWCSWHk7nbVw1NlgCRKDDuC2cTxaQq3eoUKrVa0anGg==
+
 "@isaacs/cliui@^8.0.2":
   version "8.0.2"
   resolved "https://registry.yarnpkg.com/@isaacs/cliui/-/cliui-8.0.2.tgz#b37667b7bc181c168782259bab42474fbf52b550"
