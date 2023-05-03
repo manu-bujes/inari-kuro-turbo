@@ -6,7 +6,10 @@
   "module": "./index.js",
   "exports": {
     ".": {
-      "import": "./index.js"
+      "import": "./dist/index.js"
+    },
+    "./src": {
+      "import": "./src/index.js"
     }
   },
   "author": "",
