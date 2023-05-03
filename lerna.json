@@ -6,7 +6,13 @@
   "useNx": true,
   "command": {
     "version": {
-      "allowBranch": ["main", "feature/versioning-with-lerna"]
+      "allowBranch": ["main", "feature/versioning-with-lerna"],
+      "conventionalCommits": true,
+      "noPush": true,
+      "noPrivate": true
+    },
+    "publish": {
+      "noPrivate": true
     }
   }
 }
