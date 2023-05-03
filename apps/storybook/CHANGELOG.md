@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/manu-bujes/inari-kuro-turbo/compare/storybook@1.1.0...storybook@1.2.0) (2023-05-03)
+
+### Features
+
+- **storybook:** add inari theme ([fc1f936](https://github.com/manu-bujes/inari-kuro-turbo/commit/fc1f936df0919b73619da21bf41227c8a1b11f49))
+
 # [1.1.0](https://github.com/manu-bujes/inari-kuro-turbo/compare/storybook@0.0.2...storybook@1.1.0) (2023-05-03)
 
 ### Features
