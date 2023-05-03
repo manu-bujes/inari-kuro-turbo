@@ -1,3 +1,5 @@
+import '../public/styles/style.scss';
+
 /** @type { import('@storybook/vue3').Preview } */
 const preview = {
   parameters: {
@@ -6,6 +8,11 @@ const preview = {
       matchers: {
         color: /(background|color)$/i,
         date: /Date$/,
+      },
+    },
+    options: {
+      storySort: {
+        method: 'alphabetical',
       },
     },
   },

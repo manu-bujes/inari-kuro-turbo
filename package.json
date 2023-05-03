@@ -6,7 +6,8 @@
     "dev": "lerna run dev",
     "lint": "lerna run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "graph": "nx graph"
+    "graph": "nx graph",
+    "lerna": "lerna"
   },
   "dependencies": {
     "vue": "^3.2.45"
