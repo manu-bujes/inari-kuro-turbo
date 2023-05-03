@@ -6,8 +6,6 @@
     "dev": "lerna run dev",
     "lint": "lerna run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "version": "lerna version --conventional-commits --no-private --no-push",
-    "publish": "lerna publish --no-private",
     "graph": "nx graph"
   },
   "dependencies": {
