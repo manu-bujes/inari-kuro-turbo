@@ -18,6 +18,10 @@
     "registry": "https://nexus.tech.inari.io/repository/npm-private/"
   },
   "scripts": {
-    "build": "vite build -c ../../tools/config/vite.config.base.js"
+    "build": "vite build --config ../../tools/config/vite.config.base.js",
+    "test": "vitest run --config ../../tools/config/vite.config.base.js",
+    "test:watch": "vitest watch --config ../../tools/config/vite.config.base.js",
+    "coverage": "vitest run --coverage --config ../../tools/config/vite.config.base.js",
+    "lint": "eslint --ext .js,.vue,.html src"
   }
 }
