@@ -2,13 +2,13 @@
   "name": "inari-kuro-turbo",
   "private": true,
   "scripts": {
+    "prepare": "husky install",
     "build": "lerna run build",
     "dev": "lerna run dev",
     "lint": "lerna run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "graph": "nx graph",
-    "lerna": "lerna",
-    "preversion": "lerna run build"
+    "lerna": "lerna"
   },
   "dependencies": {
     "vue": "^3.2.45"
@@ -23,9 +23,12 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vitest-globals": "^1.3.1",
     "eslint-plugin-vue": "^9.9.0",
+    "husky": "^8.0.3",
     "jsdom": "^22.0.0",
     "lerna": "^6.6.1",
+    "lint-staged": "^13.2.2",
     "nx": "^16.0.1",
+    "postcss": "^8.4.23",
     "prettier": "^2.6.2",
     "sass": "^1.62.0",
     "vite": "^4.2.1",
