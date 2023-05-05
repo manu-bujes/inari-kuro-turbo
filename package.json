@@ -17,6 +17,7 @@
     "@commitlint/cli": "^17.6.3",
     "@commitlint/config-conventional": "^17.6.3",
     "@commitlint/config-lerna-scopes": "^17.6.3",
+    "@commitlint/config-nx-scopes": "^17.4.3",
     "@vitejs/plugin-vue": "^4.1.0",
     "@vue/test-utils": "^2.3.2",
     "eslint": "^7.32.0",
