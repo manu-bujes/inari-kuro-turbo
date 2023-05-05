@@ -8,7 +8,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "graph": "nx graph",
     "lerna": "lerna",
-    "pre-version": "lerna run dev"
+    "preversion": "lerna run dev"
   },
   "dependencies": {
     "vue": "^3.2.45"
