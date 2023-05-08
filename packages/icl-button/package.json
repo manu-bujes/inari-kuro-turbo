@@ -2,6 +2,8 @@
   "name": "@inari/icl-button",
   "version": "0.2.1",
   "description": "",
+  "author": "",
+  "license": "ISC",
   "type": "module",
   "module": "./dist/index.js",
   "exports": {
@@ -12,18 +14,23 @@
       "import": "./src/index.js"
     }
   },
-  "author": "",
-  "license": "ISC",
+  
   "publishConfig": {
     "registry": "https://nexus.tech.inari.io/repository/npm-private/"
   },
   "scripts": {
-    "build": "vite build -c ../../tools/config/vite.config.base.js",
-    "lint": "eslint"
+    "build": "vite build --config ../../tools/config/vite.config.base.js",
+    "test": "vitest run --config ../../tools/config/vite.config.base.js",
+    "test:watch": "vitest watch --config ../../tools/config/vite.config.base.js",
+    "coverage": "vitest run --coverage --config ../../tools/config/vite.config.base.js",
+    "lint": "eslint src"
   },
   "dependencies": {
     "@inari/assets": "^0.0.1",
     "@inari/icl-icon": "^0.2.2",
     "@inari/icl-tooltip": "^0.1.2"
+  },
+  "devDependencies": {
+    "eslint-config-custom": "*"
   }
 }

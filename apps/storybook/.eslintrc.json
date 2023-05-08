@@ -1,3 +1,10 @@
 {
-  "extends": ["plugin:storybook/recommended", "../../.eslintrc.json"]
+  "root": true,
+  "extends": ["custom"],
+  "overrides": [
+    {
+      "files": ["*.vue", "*.js"],
+      "rules": {}
+    }
+  ]
 }

@@ -1,8 +1,9 @@
 {
-  "extends": ["../../.eslintrc.json"],
+  "root": true,
+  "extends": ["custom"],
   "overrides": [
     {
-      "files": ["*.vue", "*.js", "*.jsx"],
+      "files": ["*.vue", "*.js"],
       "rules": {}
     }
   ]

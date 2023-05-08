@@ -1,10 +1,10 @@
 import { create } from '@storybook/theming';
 
 export default create({
-  base: 'light',
+  base: 'light', 
 
   colorPrimary: '#6D7E91',
-  colorSecondary: '#1D3056',
+  colorSecondary: '#1D3056',   
 
   fontBase: '"Open Sans", sans-serif',
 

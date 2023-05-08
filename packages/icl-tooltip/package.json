@@ -2,6 +2,8 @@
   "name": "@inari/icl-tooltip",
   "version": "0.1.2",
   "description": "",
+  "author": "",
+  "license": "ISC",
   "type": "module",
   "module": "./dist/index.js",
   "exports": {
@@ -13,14 +15,17 @@
     }
   },
   "devDependencies": {
+    "eslint-config-custom": "*",
     "@vueuse/core": "^9.13.0"
   },
-  "author": "",
-  "license": "ISC",
   "publishConfig": {
     "registry": "https://nexus.tech.inari.io/repository/npm-private/"
   },
   "scripts": {
-    "build": "vite build -c ../../tools/config/vite.config.base.js"
+    "build": "vite build --config ../../tools/config/vite.config.base.js",
+    "test": "vitest run --config ../../tools/config/vite.config.base.js",
+    "test:watch": "vitest watch --config ../../tools/config/vite.config.base.js",
+    "coverage": "vitest run --coverage --config ../../tools/config/vite.config.base.js",
+    "lint": "eslint src"
   }
 }
