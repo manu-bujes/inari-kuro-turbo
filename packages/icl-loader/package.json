@@ -1,6 +1,6 @@
 {
   "name": "@inari/icl-loader",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "",
   "author": "",
   "license": "ISC",
@@ -18,7 +18,7 @@
     "registry": "https://nexus.tech.inari.io/repository/npm-private/"
   },
   "devDependencies": {
-    "eslint-config-custom": "*"
+    "eslint-config-custom": "^1.1.0"
   },
   "scripts": {
     "build": "vite build --config ../../tools/config/vite.config.base.js",

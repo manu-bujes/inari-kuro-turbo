@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.3](https://github.com/manu-bujes/inari-kuro-turbo/compare/@inari/icl-icon@0.2.2...@inari/icl-icon@0.2.3) (2023-05-12)
+
+**Note:** Version bump only for package @inari/icl-icon
+
 ## [0.2.2](https://github.com/manu-bujes/inari-kuro-turbo/compare/@inari/icl-icon@0.2.1...@inari/icl-icon@0.2.2) (2023-05-05)
 
 **Note:** Version bump only for package @inari/icl-icon
