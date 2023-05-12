@@ -1,24 +1,39 @@
-(function(){"use strict";try{if(typeof document<"u"){var r=document.createElement("style");r.appendChild(document.createTextNode(".icl-button{box-sizing:border-box;transition:all .2s ease;border-radius:4px;text-align:center;position:relative;display:flex;cursor:pointer}.icl-button .icl-icon.prepend-icon{vertical-align:middle;margin-right:10px}.icl-button .icl-icon.append-icon{vertical-align:middle;margin-left:10px}.icl-button .content{display:flex;align-items:center;height:100%}.icl-button .actions-button{display:flex;justify-content:center;align-items:center;border-left:1px solid var(--white);height:100%;padding:0 10px}.icl-button .actions-button>.icl-icon{width:10px;height:7px}.icl-button .actions-button .actions-wrapper{display:flex;flex-direction:column}.icl-button .actions-button .actions-wrapper .action-item{display:flex;height:30px;justify-content:space-between;align-items:center;padding:0 20px;border-bottom:1px solid var(--white)}.icl-button .actions-button .actions-wrapper .action-item .icl-icon{color:var(--white);margin-right:5px}.icl-button.disabled{cursor:default}.icl-button.primary{background:var(--primary);color:var(--white);border:solid 1px var(--primary)}.icl-button.primary.disabled{background:var(--primary-200);border:solid 1px var(--primary-200)}.icl-button.primary:hover:not(.disabled){background:var(--primary-600);border:solid 1px var(--primary-600)}.icl-button.primary .icl-icon{color:var(--white)}.icl-button.secondary{background:var(--white);color:var(--primary);border:solid 1px var(--primary)}.icl-button.secondary .actions-button{border-left:solid 1px var(--primary)}.icl-button.secondary.disabled{color:var(--primary-300);border:solid 1px var(--primary-300)}.icl-button.secondary.disabled .icl-icon{color:var(--primary-300)}.icl-button.secondary:hover:not(.disabled){background:var(--secondary-300);border:solid 1px var(--primary)}.icl-button.secondary .icl-icon{color:var(--primary)}.icl-button.success{background:var(--success);color:var(--white);border:solid 1px var(--success)}.icl-button.success.disabled{background:var(--success-200);border:solid 1px var(--success-200)}.icl-button.success:hover:not(.disabled){background:var(--success-600);border:solid 1px var(--success-600)}.icl-button.success .icl-icon{color:var(--white)}.icl-button.error{background:var(--error);color:var(--white);border:solid 1px var(--error)}.icl-button.error.disabled{background:var(--error-200);border:solid 1px var(--error-200)}.icl-button.error:hover:not(.disabled){background:var(--error-600);border:solid 1px var(--error-600)}.icl-button.error .icl-icon{color:var(--white)}.icl-button.warning{background:var(--warning);color:var(--white);border:solid 1px var(--warning)}.icl-button.warning.disabled{background:var(--warning-200);border:solid 1px var(--warning-200)}.icl-button.warning:hover:not(.disabled){background:var(--warning-600);border:solid 1px var(--warning-600)}.icl-button.warning .icl-icon{color:var(--white)}.icl-button.grey{background:var(--grey-500);color:var(--white);border:solid 1px var(--grey-500)}.icl-button.grey.disabled{background:var(--grey-200);border:solid 1px var(--grey-200);color:var(--primary-300)}.icl-button.grey.disabled .icl-icon{color:var(--primary-300)}.icl-button.grey:hover:not(.disabled){background:var(--grey-600);border:solid 1px var(--grey-600)}.icl-button.grey .icl-icon{color:var(--white)}.icl-button.small{height:24px;font-size:12px;font-weight:400}.icl-button.small .content{padding:0 16px}.icl-button.small .content .icl-icon{height:13px;width:13px}.icl-button.small.has-actions{padding-right:0}.icl-button.medium{height:32px;font-size:14px;font-weight:400}.icl-button.medium .content{padding:0 16px}.icl-button.medium .content .icl-icon{height:16px;width:16px}.icl-button.medium.has-actions{padding-right:0}.icl-button.large{height:40px;font-size:14px;font-weight:600}.icl-button.large .content{padding:0 16px}.icl-button.large .content .icl-icon{height:19px;width:19px}.icl-button.large.has-actions{padding-right:0}.icl-button.full-width{width:100%}.icl-button.uppercase{text-transform:uppercase}")),document.head.appendChild(r)}}catch(i){console.error("vite-plugin-css-injected-by-js",i)}})();
-import { openBlock as s, createElementBlock as g, normalizeClass as w, createBlock as v, resolveDynamicComponent as W, useCssVars as V, ref as z, computed as T, renderSlot as b, createElementVNode as k, unref as u, normalizeStyle as H, createTextVNode as D, toDisplayString as $, watch as G, getCurrentScope as Z, onScopeDispose as F, createCommentVNode as m, withCtx as S, Fragment as q, renderList as K, createVNode as R } from "vue";
 (function() {
+  "use strict";
   try {
-    if (typeof document < "u") {
-      var t = document.createElement("style");
-      t.appendChild(document.createTextNode(".icl-icon{display:flex;transform:scale(1);stroke-width:0;stroke:currentColor;fill:currentColor}.icl-icon.default{width:24px;height:24px}.icl-icon.small{width:18px;height:18px}.icl-icon.medium{width:32px;height:32px}.icl-icon.large{width:40px;height:40px}.icl-icon.xlarge{width:60px;height:60px}.icl-icon.big{width:96px;height:96px}.icl-icon--is-primary{color:var(--primary)}.icl-icon--is-secondary{color:var(--secondary)}.icl-icon--is-grey{color:var(--grey)}.icl-icon--is-info{color:var(--info)}.icl-icon--is-success{color:var(--success)}.icl-icon--is-warning{color:var(--warning)}.icl-icon--is-error{color:var(--error)}.icl-icon--is-clear{color:var(--clear)}.icl-icon--is-white{color:var(--white)}.icl-icon.disabled{opacity:.4;cursor:initial}.icl-icon.cursor-pointer:not(.disabled){cursor:pointer}.icl-icon.cursor-default{cursor:default}")), document.head.appendChild(t);
+    if (typeof document != "undefined") {
+      var elementStyle = document.createElement("style");
+      elementStyle.id = "@inari/icl-button";
+      elementStyle.appendChild(document.createTextNode(".icl-button {\n  box-sizing: border-box;\n  transition: all 0.2s ease;\n  border-radius: 4px;\n  text-align: center;\n  position: relative;\n  display: flex;\n  cursor: pointer;\n}\n.icl-button .icl-icon.prepend-icon {\n  vertical-align: middle;\n  margin-right: 10px;\n}\n.icl-button .icl-icon.append-icon {\n  vertical-align: middle;\n  margin-left: 10px;\n}\n.icl-button .content {\n  display: flex;\n  align-items: center;\n  height: 100%;\n}\n.icl-button .actions-button {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  border-left: 1px solid var(--white);\n  height: 100%;\n  padding: 0 10px;\n}\n.icl-button .actions-button > .icl-icon {\n  width: 10px;\n  height: 7px;\n}\n.icl-button .actions-button .actions-wrapper {\n  display: flex;\n  flex-direction: column;\n}\n.icl-button .actions-button .actions-wrapper .action-item {\n  display: flex;\n  height: 30px;\n  justify-content: space-between;\n  align-items: center;\n  padding: 0 20px;\n  border-bottom: 1px solid var(--white);\n}\n.icl-button .actions-button .actions-wrapper .action-item .icl-icon {\n  color: var(--white);\n  margin-right: 5px;\n}\n.icl-button.disabled {\n  cursor: default;\n}\n.icl-button.primary {\n  background: var(--primary);\n  color: var(--white);\n  border: solid 1px var(--primary);\n}\n.icl-button.primary.disabled {\n  background: var(--primary-200);\n  border: solid 1px var(--primary-200);\n}\n.icl-button.primary:hover:not(.disabled) {\n  background: var(--primary-600);\n  border: solid 1px var(--primary-600);\n}\n.icl-button.primary .icl-icon {\n  color: var(--white);\n}\n.icl-button.secondary {\n  background: var(--white);\n  color: var(--primary);\n  border: solid 1px var(--primary);\n}\n.icl-button.secondary .actions-button {\n  border-left: solid 1px var(--primary);\n}\n.icl-button.secondary.disabled {\n  color: var(--primary-300);\n  border: solid 1px var(--primary-300);\n}\n.icl-button.secondary.disabled .icl-icon {\n  color: var(--primary-300);\n}\n.icl-button.secondary:hover:not(.disabled) {\n  background: var(--secondary-300);\n  border: solid 1px var(--primary);\n}\n.icl-button.secondary .icl-icon {\n  color: var(--primary);\n}\n.icl-button.success {\n  background: var(--success);\n  color: var(--white);\n  border: solid 1px var(--success);\n}\n.icl-button.success.disabled {\n  background: var(--success-200);\n  border: solid 1px var(--success-200);\n}\n.icl-button.success:hover:not(.disabled) {\n  background: var(--success-600);\n  border: solid 1px var(--success-600);\n}\n.icl-button.success .icl-icon {\n  color: var(--white);\n}\n.icl-button.error {\n  background: var(--error);\n  color: var(--white);\n  border: solid 1px var(--error);\n}\n.icl-button.error.disabled {\n  background: var(--error-200);\n  border: solid 1px var(--error-200);\n}\n.icl-button.error:hover:not(.disabled) {\n  background: var(--error-600);\n  border: solid 1px var(--error-600);\n}\n.icl-button.error .icl-icon {\n  color: var(--white);\n}\n.icl-button.warning {\n  background: var(--warning);\n  color: var(--white);\n  border: solid 1px var(--warning);\n}\n.icl-button.warning.disabled {\n  background: var(--warning-200);\n  border: solid 1px var(--warning-200);\n}\n.icl-button.warning:hover:not(.disabled) {\n  background: var(--warning-600);\n  border: solid 1px var(--warning-600);\n}\n.icl-button.warning .icl-icon {\n  color: var(--white);\n}\n.icl-button.grey {\n  background: var(--grey-500);\n  color: var(--white);\n  border: solid 1px var(--grey-500);\n}\n.icl-button.grey.disabled {\n  background: var(--grey-200);\n  border: solid 1px var(--grey-200);\n  color: var(--primary-300);\n}\n.icl-button.grey.disabled .icl-icon {\n  color: var(--primary-300);\n}\n.icl-button.grey:hover:not(.disabled) {\n  background: var(--grey-600);\n  border: solid 1px var(--grey-600);\n}\n.icl-button.grey .icl-icon {\n  color: var(--white);\n}\n.icl-button.small {\n  height: 24px;\n  font-size: 12px;\n  font-weight: 400;\n}\n.icl-button.small .content {\n  padding: 0 16px;\n}\n.icl-button.small .content .icl-icon {\n  height: 13px;\n  width: 13px;\n}\n.icl-button.small.has-actions {\n  padding-right: 0px;\n}\n.icl-button.medium {\n  height: 32px;\n  font-size: 14px;\n  font-weight: 400;\n}\n.icl-button.medium .content {\n  padding: 0 16px;\n}\n.icl-button.medium .content .icl-icon {\n  height: 16px;\n  width: 16px;\n}\n.icl-button.medium.has-actions {\n  padding-right: 0px;\n}\n.icl-button.large {\n  height: 40px;\n  font-size: 14px;\n  font-weight: 600;\n}\n.icl-button.large .content {\n  padding: 0 16px;\n}\n.icl-button.large .content .icl-icon {\n  height: 19px;\n  width: 19px;\n}\n.icl-button.large.has-actions {\n  padding-right: 0px;\n}\n.icl-button.full-width {\n  width: 100%;\n}\n.icl-button.uppercase {\n  text-transform: uppercase;\n}"));
+      document.head.appendChild(elementStyle);
     }
-  } catch (o) {
-    console.error("vite-plugin-css-injected-by-js", o);
+  } catch (e) {
+    console.error("vite-plugin-css-injected-by-js", e);
   }
 })();
-const Y = {
+import { openBlock, createElementBlock, normalizeClass, createBlock, resolveDynamicComponent, useCssVars, ref, computed, renderSlot, createElementVNode, unref, normalizeStyle, createTextVNode, toDisplayString, watch, getCurrentScope, onScopeDispose, createCommentVNode, withCtx, Fragment, renderList, createVNode } from "vue";
+(function() {
+  try {
+    if (typeof document != "undefined") {
+      var elementStyle = document.createElement("style");
+      elementStyle.id = "@inari/icl-icon";
+      elementStyle.appendChild(document.createTextNode(".icl-icon {\n  display: flex;\n  transform: scale(1);\n  stroke-width: 0;\n  stroke: currentColor;\n  fill: currentColor;\n}\n.icl-icon.default {\n  width: 24px;\n  height: 24px;\n}\n.icl-icon.small {\n  width: 18px;\n  height: 18px;\n}\n.icl-icon.medium {\n  width: 32px;\n  height: 32px;\n}\n.icl-icon.large {\n  width: 40px;\n  height: 40px;\n}\n.icl-icon.xlarge {\n  width: 60px;\n  height: 60px;\n}\n.icl-icon.big {\n  width: 96px;\n  height: 96px;\n}\n.icl-icon--is-primary {\n  color: var(--primary);\n}\n.icl-icon--is-secondary {\n  color: var(--secondary);\n}\n.icl-icon--is-grey {\n  color: var(--grey);\n}\n.icl-icon--is-info {\n  color: var(--info);\n}\n.icl-icon--is-success {\n  color: var(--success);\n}\n.icl-icon--is-warning {\n  color: var(--warning);\n}\n.icl-icon--is-error {\n  color: var(--error);\n}\n.icl-icon--is-clear {\n  color: var(--clear);\n}\n.icl-icon--is-white {\n  color: var(--white);\n}\n.icl-icon.disabled {\n  opacity: 0.4;\n  cursor: initial;\n}\n.icl-icon.cursor-pointer:not(.disabled) {\n  cursor: pointer;\n}\n.icl-icon.cursor-default {\n  cursor: default;\n}"));
+      document.head.appendChild(elementStyle);
+    }
+  } catch (e) {
+    console.error("vite-plugin-css-injected-by-js", e);
+  }
+})();
+const __default__$2 = {
   name: "IclIcon"
-}, I = /* @__PURE__ */ Object.assign(Y, {
+};
+const _sfc_main$2 = /* @__PURE__ */ Object.assign(__default__$2, {
   props: {
     /**
      * Icon component displayed..
      */
     icon: {
-      required: !0,
+      required: true,
       type: Object,
       default: () => {
       }
@@ -52,119 +67,185 @@ const Y = {
      */
     disabled: {
       type: Boolean,
-      default: !1
+      default: false
     }
   },
   emits: ["click"],
-  setup(t, { emit: o }) {
-    const e = t, i = () => {
-      e.disabled || o("click");
+  setup(__props, { emit }) {
+    const props = __props;
+    const clickEvent = () => {
+      if (props.disabled)
+        return;
+      emit("click");
     };
-    return (r, a) => (s(), g("div", {
-      class: w(["icl-icon", {
-        [`icl-icon--is-${t.color} ${t.size} cursor-${t.cursor}`]: !0,
-        disabled: t.disabled
-      }]),
-      onClick: i
-    }, [
-      (s(), v(W(t.icon)))
-    ], 2));
+    return (_ctx, _cache) => {
+      return openBlock(), createElementBlock("div", {
+        class: normalizeClass(["icl-icon", {
+          [`icl-icon--is-${__props.color} ${__props.size} cursor-${__props.cursor}`]: true,
+          disabled: __props.disabled
+        }]),
+        onClick: clickEvent
+      }, [
+        (openBlock(), createBlock(resolveDynamicComponent(__props.icon)))
+      ], 2);
+    };
   }
 });
 (function() {
   try {
-    if (typeof document < "u") {
-      var t = document.createElement("style");
-      t.appendChild(document.createTextNode('.icl-tooltip{--icl-tooltip-offset: var(--82f0bbe6);position:relative;display:inline-block}.icl-tooltip .tooltip{display:flex;justify-content:center;align-items:center;padding:4px 8px;border-radius:4px;font-size:12px;color:var(--white);opacity:0;transition:opacity 1s;position:absolute;z-index:1}.icl-tooltip .tooltip:after{content:"";position:absolute;border-style:solid;border-color:transparent}.icl-tooltip .tooltip.no-padding{padding:0}.icl-tooltip .tooltip.top{bottom:calc(100% + var(--icl-tooltip-offset));left:50%;transform:translate(-50%)}.icl-tooltip .tooltip.top:after{top:100%;left:50%;margin-left:-5px;border-width:5px;border-top-color:var(--icl-tooltip-bg)}.icl-tooltip .tooltip.bottom{top:calc(100% + var(--icl-tooltip-offset));left:50%;transform:translate(-50%)}.icl-tooltip .tooltip.bottom:after{bottom:100%;left:50%;margin-left:-5px;border-width:5px;border-bottom-color:var(--icl-tooltip-bg)}.icl-tooltip .tooltip.right{left:calc(100% + var(--icl-tooltip-offset));top:50%;transform:translateY(-50%)}.icl-tooltip .tooltip.right:after{right:100%;top:calc(50% - 5px);margin-left:-5px;border-width:5px;border-right-color:var(--icl-tooltip-bg)}.icl-tooltip .tooltip.left{right:calc(100% + var(--icl-tooltip-offset));top:50%;transform:translateY(-50%)}.icl-tooltip .tooltip.left:after{left:100%;top:calc(50% - 5px);margin-right:-5px;border-width:5px;border-left-color:var(--icl-tooltip-bg)}.icl-tooltip .tooltip.visible{opacity:1}.icl-tooltip .tooltip.primary{--icl-tooltip-bg: var(--primary-500);background:var(--icl-tooltip-bg)}.icl-tooltip .tooltip.success{--icl-tooltip-bg: var(--success-500);background:var(--icl-tooltip-bg)}.icl-tooltip .tooltip.info{--icl-tooltip-bg: var(--info-500);background:var(--icl-tooltip-bg)}.icl-tooltip .tooltip.error{--icl-tooltip-bg: var(--error-500);background:var(--icl-tooltip-bg)}.icl-tooltip .tooltip.warning{--icl-tooltip-bg: var(--warning-500);background:var(--icl-tooltip-bg)}')), document.head.appendChild(t);
+    if (typeof document != "undefined") {
+      var elementStyle = document.createElement("style");
+      elementStyle.id = "@inari/icl-tooltip";
+      elementStyle.appendChild(document.createTextNode('.icl-tooltip {\n  --icl-tooltip-offset: var(--82f0bbe6);\n  position: relative;\n  display: inline-block;\n}\n.icl-tooltip .tooltip {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  padding: 4px 8px;\n  border-radius: 4px;\n  font-size: 12px;\n  color: var(--white);\n  opacity: 0;\n  transition: opacity 1s;\n  position: absolute;\n  z-index: 1;\n}\n.icl-tooltip .tooltip::after {\n  content: "";\n  position: absolute;\n  border-style: solid;\n  border-color: transparent;\n}\n.icl-tooltip .tooltip.no-padding {\n  padding: 0px;\n}\n.icl-tooltip .tooltip.top {\n  bottom: calc(100% + var(--icl-tooltip-offset));\n  left: 50%;\n  transform: translateX(-50%);\n}\n.icl-tooltip .tooltip.top::after {\n  top: 100%;\n  left: 50%;\n  margin-left: -5px;\n  border-width: 5px;\n  border-top-color: var(--icl-tooltip-bg);\n}\n.icl-tooltip .tooltip.bottom {\n  top: calc(100% + var(--icl-tooltip-offset));\n  left: 50%;\n  transform: translateX(-50%);\n}\n.icl-tooltip .tooltip.bottom::after {\n  bottom: 100%;\n  left: 50%;\n  margin-left: -5px;\n  border-width: 5px;\n  border-bottom-color: var(--icl-tooltip-bg);\n}\n.icl-tooltip .tooltip.right {\n  left: calc(100% + var(--icl-tooltip-offset));\n  top: 50%;\n  transform: translateY(-50%);\n}\n.icl-tooltip .tooltip.right::after {\n  right: 100%;\n  top: calc(50% - 5px);\n  margin-left: -5px;\n  border-width: 5px;\n  border-right-color: var(--icl-tooltip-bg);\n}\n.icl-tooltip .tooltip.left {\n  right: calc(100% + var(--icl-tooltip-offset));\n  top: 50%;\n  transform: translateY(-50%);\n}\n.icl-tooltip .tooltip.left::after {\n  left: 100%;\n  top: calc(50% - 5px);\n  margin-right: -5px;\n  border-width: 5px;\n  border-left-color: var(--icl-tooltip-bg);\n}\n.icl-tooltip .tooltip.visible {\n  opacity: 1;\n}\n.icl-tooltip .tooltip.primary {\n  --icl-tooltip-bg: var(--primary-500);\n  background: var(--icl-tooltip-bg);\n}\n.icl-tooltip .tooltip.success {\n  --icl-tooltip-bg: var(--success-500);\n  background: var(--icl-tooltip-bg);\n}\n.icl-tooltip .tooltip.info {\n  --icl-tooltip-bg: var(--info-500);\n  background: var(--icl-tooltip-bg);\n}\n.icl-tooltip .tooltip.error {\n  --icl-tooltip-bg: var(--error-500);\n  background: var(--icl-tooltip-bg);\n}\n.icl-tooltip .tooltip.warning {\n  --icl-tooltip-bg: var(--warning-500);\n  background: var(--icl-tooltip-bg);\n}'));
+      document.head.appendChild(elementStyle);
     }
-  } catch (o) {
-    console.error("vite-plugin-css-injected-by-js", o);
+  } catch (e) {
+    console.error("vite-plugin-css-injected-by-js", e);
   }
 })();
-var C;
-const P = typeof window < "u", J = (t) => typeof t == "string", L = () => {
-}, X = P && ((C = window == null ? void 0 : window.navigator) == null ? void 0 : C.userAgent) && /iP(ad|hone|od)/.test(window.navigator.userAgent);
-function Q(t) {
-  return typeof t == "function" ? t() : u(t);
+var _a;
+const isClient = typeof window !== "undefined";
+const isString = (val) => typeof val === "string";
+const noop = () => {
+};
+const isIOS = isClient && ((_a = window == null ? void 0 : window.navigator) == null ? void 0 : _a.userAgent) && /iP(ad|hone|od)/.test(window.navigator.userAgent);
+function resolveUnref(r) {
+  return typeof r === "function" ? r() : unref(r);
 }
-function _(t) {
-  return t;
+function identity(arg) {
+  return arg;
 }
-function tt(t) {
-  return Z() ? (F(t), !0) : !1;
+function tryOnScopeDispose(fn) {
+  if (getCurrentScope()) {
+    onScopeDispose(fn);
+    return true;
+  }
+  return false;
 }
-function h(t) {
-  var o;
-  const e = Q(t);
-  return (o = e == null ? void 0 : e.$el) != null ? o : e;
+function unrefElement(elRef) {
+  var _a2;
+  const plain = resolveUnref(elRef);
+  return (_a2 = plain == null ? void 0 : plain.$el) != null ? _a2 : plain;
 }
-const U = P ? window : void 0;
-function O(...t) {
-  let o, e, i, r;
-  if (J(t[0]) || Array.isArray(t[0]) ? ([e, i, r] = t, o = U) : [o, e, i, r] = t, !o)
-    return L;
-  Array.isArray(e) || (e = [e]), Array.isArray(i) || (i = [i]);
-  const a = [], p = () => {
-    a.forEach((l) => l()), a.length = 0;
-  }, d = (l, n, c, x) => (l.addEventListener(n, c, x), () => l.removeEventListener(n, c, x)), y = G(() => [h(o), Q(r)], ([l, n]) => {
-    p(), l && a.push(...e.flatMap((c) => i.map((x) => d(l, c, x, n))));
-  }, { immediate: !0, flush: "post" }), f = () => {
-    y(), p();
+const defaultWindow = isClient ? window : void 0;
+function useEventListener(...args) {
+  let target;
+  let events;
+  let listeners;
+  let options;
+  if (isString(args[0]) || Array.isArray(args[0])) {
+    [events, listeners, options] = args;
+    target = defaultWindow;
+  } else {
+    [target, events, listeners, options] = args;
+  }
+  if (!target)
+    return noop;
+  if (!Array.isArray(events))
+    events = [events];
+  if (!Array.isArray(listeners))
+    listeners = [listeners];
+  const cleanups = [];
+  const cleanup = () => {
+    cleanups.forEach((fn) => fn());
+    cleanups.length = 0;
   };
-  return tt(f), f;
+  const register = (el, event, listener, options2) => {
+    el.addEventListener(event, listener, options2);
+    return () => el.removeEventListener(event, listener, options2);
+  };
+  const stopWatch = watch(() => [unrefElement(target), resolveUnref(options)], ([el, options2]) => {
+    cleanup();
+    if (!el)
+      return;
+    cleanups.push(...events.flatMap((event) => {
+      return listeners.map((listener) => register(el, event, listener, options2));
+    }));
+  }, { immediate: true, flush: "post" });
+  const stop = () => {
+    stopWatch();
+    cleanup();
+  };
+  tryOnScopeDispose(stop);
+  return stop;
 }
-let N = !1;
-function et(t, o, e = {}) {
-  const { window: i = U, ignore: r = [], capture: a = !0, detectIframe: p = !1 } = e;
-  if (!i)
+let _iOSWorkaround = false;
+function onClickOutside(target, handler, options = {}) {
+  const { window: window2 = defaultWindow, ignore = [], capture = true, detectIframe = false } = options;
+  if (!window2)
     return;
-  X && !N && (N = !0, Array.from(i.document.body.children).forEach((l) => l.addEventListener("click", L)));
-  let d = !0;
-  const y = (l) => r.some((n) => {
-    if (typeof n == "string")
-      return Array.from(i.document.querySelectorAll(n)).some((c) => c === l.target || l.composedPath().includes(c));
-    {
-      const c = h(n);
-      return c && (l.target === c || l.composedPath().includes(c));
-    }
-  }), f = [
-    O(i, "click", (l) => {
-      const n = h(t);
-      if (!(!n || n === l.target || l.composedPath().includes(n))) {
-        if (l.detail === 0 && (d = !y(l)), !d) {
-          d = !0;
-          return;
-        }
-        o(l);
+  if (isIOS && !_iOSWorkaround) {
+    _iOSWorkaround = true;
+    Array.from(window2.document.body.children).forEach((el) => el.addEventListener("click", noop));
+  }
+  let shouldListen = true;
+  const shouldIgnore = (event) => {
+    return ignore.some((target2) => {
+      if (typeof target2 === "string") {
+        return Array.from(window2.document.querySelectorAll(target2)).some((el) => el === event.target || event.composedPath().includes(el));
+      } else {
+        const el = unrefElement(target2);
+        return el && (event.target === el || event.composedPath().includes(el));
       }
-    }, { passive: !0, capture: a }),
-    O(i, "pointerdown", (l) => {
-      const n = h(t);
-      n && (d = !l.composedPath().includes(n) && !y(l));
-    }, { passive: !0 }),
-    p && O(i, "blur", (l) => {
-      var n;
-      const c = h(t);
-      ((n = i.document.activeElement) == null ? void 0 : n.tagName) === "IFRAME" && !(c != null && c.contains(i.document.activeElement)) && o(l);
+    });
+  };
+  const listener = (event) => {
+    const el = unrefElement(target);
+    if (!el || el === event.target || event.composedPath().includes(el))
+      return;
+    if (event.detail === 0)
+      shouldListen = !shouldIgnore(event);
+    if (!shouldListen) {
+      shouldListen = true;
+      return;
+    }
+    handler(event);
+  };
+  const cleanup = [
+    useEventListener(window2, "click", listener, { passive: true, capture }),
+    useEventListener(window2, "pointerdown", (e) => {
+      const el = unrefElement(target);
+      if (el)
+        shouldListen = !e.composedPath().includes(el) && !shouldIgnore(e);
+    }, { passive: true }),
+    detectIframe && useEventListener(window2, "blur", (event) => {
+      var _a2;
+      const el = unrefElement(target);
+      if (((_a2 = window2.document.activeElement) == null ? void 0 : _a2.tagName) === "IFRAME" && !(el == null ? void 0 : el.contains(window2.document.activeElement)))
+        handler(event);
     })
   ].filter(Boolean);
-  return () => f.forEach((l) => l());
+  const stop = () => cleanup.forEach((fn) => fn());
+  return stop;
 }
-const A = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : typeof global < "u" ? global : typeof self < "u" ? self : {}, E = "__vueuse_ssr_handlers__";
-A[E] = A[E] || {};
-var M;
-(function(t) {
-  t.UP = "UP", t.RIGHT = "RIGHT", t.DOWN = "DOWN", t.LEFT = "LEFT", t.NONE = "NONE";
-})(M || (M = {}));
-var ot = Object.defineProperty, j = Object.getOwnPropertySymbols, it = Object.prototype.hasOwnProperty, lt = Object.prototype.propertyIsEnumerable, B = (t, o, e) => o in t ? ot(t, o, { enumerable: !0, configurable: !0, writable: !0, value: e }) : t[o] = e, nt = (t, o) => {
-  for (var e in o || (o = {}))
-    it.call(o, e) && B(t, e, o[e]);
-  if (j)
-    for (var e of j(o))
-      lt.call(o, e) && B(t, e, o[e]);
-  return t;
+const _global = typeof globalThis !== "undefined" ? globalThis : typeof window !== "undefined" ? window : typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : {};
+const globalKey = "__vueuse_ssr_handlers__";
+_global[globalKey] = _global[globalKey] || {};
+var SwipeDirection;
+(function(SwipeDirection2) {
+  SwipeDirection2["UP"] = "UP";
+  SwipeDirection2["RIGHT"] = "RIGHT";
+  SwipeDirection2["DOWN"] = "DOWN";
+  SwipeDirection2["LEFT"] = "LEFT";
+  SwipeDirection2["NONE"] = "NONE";
+})(SwipeDirection || (SwipeDirection = {}));
+var __defProp = Object.defineProperty;
+var __getOwnPropSymbols = Object.getOwnPropertySymbols;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __propIsEnum = Object.prototype.propertyIsEnumerable;
+var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __spreadValues = (a, b) => {
+  for (var prop in b || (b = {}))
+    if (__hasOwnProp.call(b, prop))
+      __defNormalProp(a, prop, b[prop]);
+  if (__getOwnPropSymbols)
+    for (var prop of __getOwnPropSymbols(b)) {
+      if (__propIsEnum.call(b, prop))
+        __defNormalProp(a, prop, b[prop]);
+    }
+  return a;
 };
-const rt = {
+const _TransitionPresets = {
   easeInSine: [0.12, 0, 0.39, 0],
   easeOutSine: [0.61, 1, 0.88, 1],
   easeInOutSine: [0.37, 0, 0.63, 1],
@@ -190,26 +271,27 @@ const rt = {
   easeOutBack: [0.34, 1.56, 0.64, 1],
   easeInOutBack: [0.68, -0.6, 0.32, 1.6]
 };
-nt({
-  linear: _
-}, rt);
-const at = {
+__spreadValues({
+  linear: identity
+}, _TransitionPresets);
+const __default__$1 = {
   name: "IclTooltip"
-}, ct = /* @__PURE__ */ Object.assign(at, {
+};
+const _sfc_main$1 = /* @__PURE__ */ Object.assign(__default__$1, {
   props: {
     /**
      * Visible property when manual trigger is selected.
      */
     visible: {
       type: Boolean,
-      default: !1
+      default: false
     },
     /**
      * Disabled tooltip.
      */
     disabled: {
       type: Boolean,
-      default: !1
+      default: false
     },
     /**
      * Text of the tooltip.
@@ -268,56 +350,80 @@ const at = {
      */
     noPadding: {
       type: Boolean,
-      value: !1
+      value: false
     }
   },
   emits: ["click-outside"],
-  setup(t, { emit: o }) {
-    const e = t;
-    V((f) => ({
-      "82f0bbe6": t.offset
+  setup(__props, { emit }) {
+    const props = __props;
+    useCssVars((_ctx) => ({
+      "82f0bbe6": __props.offset
     }));
-    const i = z(null), r = z(!1);
-    et(i, () => {
-      e.disabled || (r.value = !1, o("click-outside"));
+    const target = ref(null);
+    const internalVisible = ref(false);
+    onClickOutside(target, () => {
+      if (props.disabled)
+        return;
+      internalVisible.value = false;
+      emit("click-outside");
     });
-    const a = T(() => e.trigger === "manual" ? e.visible : r.value), p = () => {
-      e.disabled || e.trigger !== "hover" || (r.value = !0);
-    }, d = () => {
-      e.disabled || e.trigger !== "hover" || (r.value = !1);
-    }, y = () => {
-      e.disabled || e.trigger !== "click" || (r.value = !0);
+    const isVisible = computed(() => props.trigger === "manual" ? props.visible : internalVisible.value);
+    const onMouseOver = () => {
+      if (props.disabled || props.trigger !== "hover")
+        return;
+      internalVisible.value = true;
     };
-    return (f, l) => (s(), g("div", {
-      ref_key: "target",
-      ref: i,
-      class: "icl-tooltip",
-      onMouseover: p,
-      onMouseleave: d,
-      onClick: y
-    }, [
-      b(f.$slots, "default"),
-      k("div", {
-        class: w(["tooltip", { [`${t.color} ${t.position}`]: !0, visible: u(a), "no-padding": t.noPadding }]),
-        style: H({
-          "min-width": t.minWidth,
-          "max-width": t.maxWidth
-        })
+    const onMouseLeave = () => {
+      if (props.disabled || props.trigger !== "hover")
+        return;
+      internalVisible.value = false;
+    };
+    const onClick = () => {
+      if (props.disabled || props.trigger !== "click")
+        return;
+      internalVisible.value = true;
+    };
+    return (_ctx, _cache) => {
+      return openBlock(), createElementBlock("div", {
+        ref_key: "target",
+        ref: target,
+        class: "icl-tooltip",
+        onMouseover: onMouseOver,
+        onMouseleave: onMouseLeave,
+        onClick
       }, [
-        b(f.$slots, "tooltip", {}, () => [
-          D($(t.text), 1)
-        ])
-      ], 6)
-    ], 544));
+        renderSlot(_ctx.$slots, "default"),
+        createElementVNode("div", {
+          class: normalizeClass(["tooltip", { [`${__props.color} ${__props.position}`]: true, visible: unref(isVisible), "no-padding": __props.noPadding }]),
+          style: normalizeStyle({
+            "min-width": __props.minWidth,
+            "max-width": __props.maxWidth
+          })
+        }, [
+          renderSlot(_ctx.$slots, "tooltip", {}, () => [
+            createTextVNode(toDisplayString(__props.text), 1)
+          ])
+        ], 6)
+      ], 544);
+    };
   }
-}), st = "data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAgNyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEuMTc1IDAuNTMzMzI1TDUgNC4zNDk5OUw4LjgyNSAwLjUzMzMyNUwxMCAxLjcwODMzTDUgNi43MDgzMkwwIDEuNzA4MzNMMS4xNzUgMC41MzMzMjVaIiAvPgo8L3N2Zz4K";
-const dt = ["id", "type", "value", "disabled", "position"], ut = { class: "actions-wrapper" }, pt = ["onClick"], ft = ["size", "href", "target"], gt = ["position", "size", "disabled"], yt = /* @__PURE__ */ k("input", {
+});
+const ArrowDownIcon = "data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAgNyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEuMTc1IDAuNTMzMzI1TDUgNC4zNDk5OUw4LjgyNSAwLjUzMzMyNUwxMCAxLjcwODMzTDUgNi43MDgzMkwwIDEuNzA4MzNMMS4xNzUgMC41MzMzMjVaIiAvPgo8L3N2Zz4K";
+const iclButton_scss_vue_type_style_index_0_src_true_lang = "";
+const _hoisted_1 = ["id", "type", "value", "disabled", "position"];
+const _hoisted_2 = { class: "actions-wrapper" };
+const _hoisted_3 = ["onClick"];
+const _hoisted_4 = ["size", "href", "target"];
+const _hoisted_5 = ["position", "size", "disabled"];
+const _hoisted_6 = /* @__PURE__ */ createElementVNode("input", {
   id: "file_uploads",
   type: "file",
   multiple: ""
-}, null, -1), bt = {
+}, null, -1);
+const __default__ = {
   name: "IclButton"
-}, vt = /* @__PURE__ */ Object.assign(bt, {
+};
+const _sfc_main = /* @__PURE__ */ Object.assign(__default__, {
   props: {
     /**
      * ID attribute.
@@ -362,16 +468,14 @@ const dt = ["id", "type", "value", "disabled", "position"], ut = { class: "actio
      */
     prependIcon: {
       type: Object,
-      default: () => {
-      }
+      default: () => void 0
     },
     /**
      * Icon after button text.
      */
     appendIcon: {
       type: Object,
-      default: () => {
-      }
+      default: () => void 0
     },
     /**
      * Actions of the button.
@@ -385,21 +489,21 @@ const dt = ["id", "type", "value", "disabled", "position"], ut = { class: "actio
      */
     disabled: {
       type: Boolean,
-      default: !1
+      default: false
     },
     /**
      * Fullwidth button.
      */
     fullWidth: {
       type: Boolean,
-      default: !1
+      default: false
     },
     /**
      * Uppercase text.
      */
     uppercase: {
       type: Boolean,
-      default: !1
+      default: false
     },
     /**
      * Button positioning.
@@ -424,95 +528,103 @@ const dt = ["id", "type", "value", "disabled", "position"], ut = { class: "actio
     }
   },
   emits: ["click", "click-action"],
-  setup(t) {
-    const o = t, e = T(() => {
-      let i = "primary";
-      return ["success", "warning", "error"].includes(o.color) && (i = o.color), i;
+  setup(__props) {
+    const props = __props;
+    const actionsTooltipColor = computed(() => {
+      let color = "primary";
+      if (["success", "warning", "error"].includes(props.color)) {
+        color = props.color;
+      }
+      return color;
     });
-    return (i, r) => t.type === "button" ? (s(), g("button", {
-      key: 0,
-      id: t.id,
-      class: w(["icl-button", {
-        [`${t.size} ${t.color}`]: !0,
-        "has-actions": t.actions.length,
-        "full-width": t.fullWidth,
-        disabled: t.disabled,
-        uppercase: t.uppercase
-      }]),
-      type: t.type,
-      value: t.value,
-      disabled: t.disabled,
-      position: t.position
-    }, [
-      k("div", {
-        class: "content",
-        onClick: r[0] || (r[0] = (a) => i.$emit("click", a))
-      }, [
-        t.prependIcon ? (s(), v(u(I), {
-          key: 0,
-          icon: t.prependIcon,
-          class: "prepend-icon"
-        }, null, 8, ["icon"])) : m("", !0),
-        b(i.$slots, "default"),
-        t.appendIcon ? (s(), v(u(I), {
-          key: 1,
-          icon: t.appendIcon,
-          class: "append-icon"
-        }, null, 8, ["icon"])) : m("", !0)
-      ]),
-      t.actions.length ? (s(), v(u(ct), {
+    return (_ctx, _cache) => {
+      return __props.type === "button" ? (openBlock(), createElementBlock("button", {
         key: 0,
-        color: u(e),
-        "no-padding": "",
-        class: "actions-button"
-      }, {
-        tooltip: S(() => [
-          k("div", ut, [
-            b(i.$slots, "actions", { value: t.actions }, () => [
-              (s(!0), g(q, null, K(t.actions, (a, p) => (s(), g("div", {
-                key: p,
-                class: "action-item",
-                onClick: (d) => i.$emit("click-action", a.action)
-              }, [
-                a.icon ? (s(), v(u(I), {
-                  key: 0,
-                  icon: a.icon,
-                  size: "small"
-                }, null, 8, ["icon"])) : m("", !0),
-                D($(a.text), 1)
-              ], 8, pt))), 128))
+        id: __props.id,
+        class: normalizeClass(["icl-button", {
+          [`${__props.size} ${__props.color}`]: true,
+          "has-actions": __props.actions.length,
+          "full-width": __props.fullWidth,
+          disabled: __props.disabled,
+          uppercase: __props.uppercase
+        }]),
+        type: __props.type,
+        value: __props.value,
+        disabled: __props.disabled,
+        position: __props.position
+      }, [
+        createElementVNode("div", {
+          class: "content",
+          onClick: _cache[0] || (_cache[0] = ($event) => _ctx.$emit("click", $event))
+        }, [
+          __props.prependIcon ? (openBlock(), createBlock(unref(_sfc_main$2), {
+            key: 0,
+            icon: __props.prependIcon,
+            class: "prepend-icon"
+          }, null, 8, ["icon"])) : createCommentVNode("", true),
+          renderSlot(_ctx.$slots, "default"),
+          __props.appendIcon ? (openBlock(), createBlock(unref(_sfc_main$2), {
+            key: 1,
+            icon: __props.appendIcon,
+            class: "append-icon"
+          }, null, 8, ["icon"])) : createCommentVNode("", true)
+        ]),
+        __props.actions.length ? (openBlock(), createBlock(unref(_sfc_main$1), {
+          key: 0,
+          color: unref(actionsTooltipColor),
+          "no-padding": "",
+          class: "actions-button"
+        }, {
+          tooltip: withCtx(() => [
+            createElementVNode("div", _hoisted_2, [
+              renderSlot(_ctx.$slots, "actions", { value: __props.actions }, () => [
+                (openBlock(true), createElementBlock(Fragment, null, renderList(__props.actions, (action, i) => {
+                  return openBlock(), createElementBlock("div", {
+                    key: i,
+                    class: "action-item",
+                    onClick: ($event) => _ctx.$emit("click-action", action.action)
+                  }, [
+                    action.icon ? (openBlock(), createBlock(unref(_sfc_main$2), {
+                      key: 0,
+                      icon: action.icon,
+                      size: "small"
+                    }, null, 8, ["icon"])) : createCommentVNode("", true),
+                    createTextVNode(toDisplayString(action.text), 1)
+                  ], 8, _hoisted_3);
+                }), 128))
+              ])
             ])
-          ])
-        ]),
-        default: S(() => [
-          R(u(I), {
-            icon: u(st),
-            size: "small"
-          }, null, 8, ["icon"])
-        ]),
-        _: 3
-      }, 8, ["color"])) : m("", !0)
-    ], 10, dt)) : t.type === "link" ? (s(), g("a", {
-      key: 1,
-      type: "button",
-      size: t.size,
-      href: t.href,
-      target: t.target,
-      class: w([[t.color, i.extraClass], "icl-button"])
-    }, [
-      b(i.$slots, "default")
-    ], 10, ft)) : t.type === "file" ? (s(), g("label", {
-      key: 2,
-      class: w(["icl-button upload-file-button-label", t.color]),
-      position: t.position,
-      size: t.size,
-      disabled: t.disabled
-    }, [
-      b(i.$slots, "default"),
-      yt
-    ], 10, gt)) : m("", !0);
+          ]),
+          default: withCtx(() => [
+            createVNode(unref(_sfc_main$2), {
+              icon: unref(ArrowDownIcon),
+              size: "small"
+            }, null, 8, ["icon"])
+          ]),
+          _: 3
+        }, 8, ["color"])) : createCommentVNode("", true)
+      ], 10, _hoisted_1)) : __props.type === "link" ? (openBlock(), createElementBlock("a", {
+        key: 1,
+        type: "button",
+        size: __props.size,
+        href: __props.href,
+        target: __props.target,
+        class: normalizeClass([[__props.color, _ctx.extraClass], "icl-button"])
+      }, [
+        renderSlot(_ctx.$slots, "default")
+      ], 10, _hoisted_4)) : __props.type === "file" ? (openBlock(), createElementBlock("label", {
+        key: 2,
+        class: normalizeClass(["icl-button upload-file-button-label", __props.color]),
+        position: __props.position,
+        size: __props.size,
+        disabled: __props.disabled
+      }, [
+        renderSlot(_ctx.$slots, "default"),
+        _hoisted_6
+      ], 10, _hoisted_5)) : createCommentVNode("", true);
+    };
   }
 });
 export {
-  vt as IclButton
+  _sfc_main as IclButton
 };

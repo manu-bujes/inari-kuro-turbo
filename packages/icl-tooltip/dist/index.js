@@ -1,89 +1,161 @@
-(function(){"use strict";try{if(typeof document<"u"){var t=document.createElement("style");t.appendChild(document.createTextNode('.icl-tooltip{--icl-tooltip-offset: var(--82f0bbe6);position:relative;display:inline-block}.icl-tooltip .tooltip{display:flex;justify-content:center;align-items:center;padding:4px 8px;border-radius:4px;font-size:12px;color:var(--white);opacity:0;transition:opacity 1s;position:absolute;z-index:1}.icl-tooltip .tooltip:after{content:"";position:absolute;border-style:solid;border-color:transparent}.icl-tooltip .tooltip.no-padding{padding:0}.icl-tooltip .tooltip.top{bottom:calc(100% + var(--icl-tooltip-offset));left:50%;transform:translate(-50%)}.icl-tooltip .tooltip.top:after{top:100%;left:50%;margin-left:-5px;border-width:5px;border-top-color:var(--icl-tooltip-bg)}.icl-tooltip .tooltip.bottom{top:calc(100% + var(--icl-tooltip-offset));left:50%;transform:translate(-50%)}.icl-tooltip .tooltip.bottom:after{bottom:100%;left:50%;margin-left:-5px;border-width:5px;border-bottom-color:var(--icl-tooltip-bg)}.icl-tooltip .tooltip.right{left:calc(100% + var(--icl-tooltip-offset));top:50%;transform:translateY(-50%)}.icl-tooltip .tooltip.right:after{right:100%;top:calc(50% - 5px);margin-left:-5px;border-width:5px;border-right-color:var(--icl-tooltip-bg)}.icl-tooltip .tooltip.left{right:calc(100% + var(--icl-tooltip-offset));top:50%;transform:translateY(-50%)}.icl-tooltip .tooltip.left:after{left:100%;top:calc(50% - 5px);margin-right:-5px;border-width:5px;border-left-color:var(--icl-tooltip-bg)}.icl-tooltip .tooltip.visible{opacity:1}.icl-tooltip .tooltip.primary{--icl-tooltip-bg: var(--primary-500);background:var(--icl-tooltip-bg)}.icl-tooltip .tooltip.success{--icl-tooltip-bg: var(--success-500);background:var(--icl-tooltip-bg)}.icl-tooltip .tooltip.info{--icl-tooltip-bg: var(--info-500);background:var(--icl-tooltip-bg)}.icl-tooltip .tooltip.error{--icl-tooltip-bg: var(--error-500);background:var(--icl-tooltip-bg)}.icl-tooltip .tooltip.warning{--icl-tooltip-bg: var(--warning-500);background:var(--icl-tooltip-bg)}')),document.head.appendChild(t)}}catch(o){console.error("vite-plugin-css-injected-by-js",o)}})();
-import { unref as P, getCurrentScope as T, onScopeDispose as N, watch as B, useCssVars as Q, ref as v, computed as W, openBlock as L, createElementBlock as M, renderSlot as O, createElementVNode as V, normalizeClass as $, normalizeStyle as j, createTextVNode as F, toDisplayString as R } from "vue";
-var h;
-const k = typeof window < "u", U = (e) => typeof e == "string", x = () => {
-}, z = k && ((h = window == null ? void 0 : window.navigator) == null ? void 0 : h.userAgent) && /iP(ad|hone|od)/.test(window.navigator.userAgent);
-function C(e) {
-  return typeof e == "function" ? e() : P(e);
-}
-function D(e) {
-  return e;
-}
-function G(e) {
-  return T() ? (N(e), !0) : !1;
-}
-function g(e) {
-  var n;
-  const t = C(e);
-  return (n = t == null ? void 0 : t.$el) != null ? n : t;
-}
-const A = k ? window : void 0;
-function y(...e) {
-  let n, t, r, s;
-  if (U(e[0]) || Array.isArray(e[0]) ? ([t, r, s] = e, n = A) : [n, t, r, s] = e, !n)
-    return x;
-  Array.isArray(t) || (t = [t]), Array.isArray(r) || (r = [r]);
-  const c = [], f = () => {
-    c.forEach((a) => a()), c.length = 0;
-  }, u = (a, m, o, i) => (a.addEventListener(m, o, i), () => a.removeEventListener(m, o, i)), p = B(() => [g(n), C(s)], ([a, m]) => {
-    f(), a && c.push(...t.flatMap((o) => r.map((i) => u(a, o, i, m))));
-  }, { immediate: !0, flush: "post" }), d = () => {
-    p(), f();
-  };
-  return G(d), d;
-}
-let b = !1;
-function H(e, n, t = {}) {
-  const { window: r = A, ignore: s = [], capture: c = !0, detectIframe: f = !1 } = t;
-  if (!r)
-    return;
-  z && !b && (b = !0, Array.from(r.document.body.children).forEach((o) => o.addEventListener("click", x)));
-  let u = !0;
-  const p = (o) => s.some((i) => {
-    if (typeof i == "string")
-      return Array.from(r.document.querySelectorAll(i)).some((l) => l === o.target || o.composedPath().includes(l));
-    {
-      const l = g(i);
-      return l && (o.target === l || o.composedPath().includes(l));
+(function() {
+  "use strict";
+  try {
+    if (typeof document != "undefined") {
+      var elementStyle = document.createElement("style");
+      elementStyle.id = "@inari/icl-tooltip";
+      elementStyle.appendChild(document.createTextNode('.icl-tooltip {\n  --icl-tooltip-offset: var(--82f0bbe6);\n  position: relative;\n  display: inline-block;\n}\n.icl-tooltip .tooltip {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  padding: 4px 8px;\n  border-radius: 4px;\n  font-size: 12px;\n  color: var(--white);\n  opacity: 0;\n  transition: opacity 1s;\n  position: absolute;\n  z-index: 1;\n}\n.icl-tooltip .tooltip::after {\n  content: "";\n  position: absolute;\n  border-style: solid;\n  border-color: transparent;\n}\n.icl-tooltip .tooltip.no-padding {\n  padding: 0px;\n}\n.icl-tooltip .tooltip.top {\n  bottom: calc(100% + var(--icl-tooltip-offset));\n  left: 50%;\n  transform: translateX(-50%);\n}\n.icl-tooltip .tooltip.top::after {\n  top: 100%;\n  left: 50%;\n  margin-left: -5px;\n  border-width: 5px;\n  border-top-color: var(--icl-tooltip-bg);\n}\n.icl-tooltip .tooltip.bottom {\n  top: calc(100% + var(--icl-tooltip-offset));\n  left: 50%;\n  transform: translateX(-50%);\n}\n.icl-tooltip .tooltip.bottom::after {\n  bottom: 100%;\n  left: 50%;\n  margin-left: -5px;\n  border-width: 5px;\n  border-bottom-color: var(--icl-tooltip-bg);\n}\n.icl-tooltip .tooltip.right {\n  left: calc(100% + var(--icl-tooltip-offset));\n  top: 50%;\n  transform: translateY(-50%);\n}\n.icl-tooltip .tooltip.right::after {\n  right: 100%;\n  top: calc(50% - 5px);\n  margin-left: -5px;\n  border-width: 5px;\n  border-right-color: var(--icl-tooltip-bg);\n}\n.icl-tooltip .tooltip.left {\n  right: calc(100% + var(--icl-tooltip-offset));\n  top: 50%;\n  transform: translateY(-50%);\n}\n.icl-tooltip .tooltip.left::after {\n  left: 100%;\n  top: calc(50% - 5px);\n  margin-right: -5px;\n  border-width: 5px;\n  border-left-color: var(--icl-tooltip-bg);\n}\n.icl-tooltip .tooltip.visible {\n  opacity: 1;\n}\n.icl-tooltip .tooltip.primary {\n  --icl-tooltip-bg: var(--primary-500);\n  background: var(--icl-tooltip-bg);\n}\n.icl-tooltip .tooltip.success {\n  --icl-tooltip-bg: var(--success-500);\n  background: var(--icl-tooltip-bg);\n}\n.icl-tooltip .tooltip.info {\n  --icl-tooltip-bg: var(--info-500);\n  background: var(--icl-tooltip-bg);\n}\n.icl-tooltip .tooltip.error {\n  --icl-tooltip-bg: var(--error-500);\n  background: var(--icl-tooltip-bg);\n}\n.icl-tooltip .tooltip.warning {\n  --icl-tooltip-bg: var(--warning-500);\n  background: var(--icl-tooltip-bg);\n}'));
+      document.head.appendChild(elementStyle);
     }
-  }), a = [
-    y(r, "click", (o) => {
-      const i = g(e);
-      if (!(!i || i === o.target || o.composedPath().includes(i))) {
-        if (o.detail === 0 && (u = !p(o)), !u) {
-          u = !0;
-          return;
-        }
-        n(o);
+  } catch (e) {
+    console.error("vite-plugin-css-injected-by-js", e);
+  }
+})();
+import { unref, getCurrentScope, onScopeDispose, watch, useCssVars, ref, computed, openBlock, createElementBlock, renderSlot, createElementVNode, normalizeClass, normalizeStyle, createTextVNode, toDisplayString } from "vue";
+var _a;
+const isClient = typeof window !== "undefined";
+const isString = (val) => typeof val === "string";
+const noop = () => {
+};
+const isIOS = isClient && ((_a = window == null ? void 0 : window.navigator) == null ? void 0 : _a.userAgent) && /iP(ad|hone|od)/.test(window.navigator.userAgent);
+function resolveUnref(r) {
+  return typeof r === "function" ? r() : unref(r);
+}
+function identity(arg) {
+  return arg;
+}
+function tryOnScopeDispose(fn) {
+  if (getCurrentScope()) {
+    onScopeDispose(fn);
+    return true;
+  }
+  return false;
+}
+function unrefElement(elRef) {
+  var _a2;
+  const plain = resolveUnref(elRef);
+  return (_a2 = plain == null ? void 0 : plain.$el) != null ? _a2 : plain;
+}
+const defaultWindow = isClient ? window : void 0;
+function useEventListener(...args) {
+  let target;
+  let events;
+  let listeners;
+  let options;
+  if (isString(args[0]) || Array.isArray(args[0])) {
+    [events, listeners, options] = args;
+    target = defaultWindow;
+  } else {
+    [target, events, listeners, options] = args;
+  }
+  if (!target)
+    return noop;
+  if (!Array.isArray(events))
+    events = [events];
+  if (!Array.isArray(listeners))
+    listeners = [listeners];
+  const cleanups = [];
+  const cleanup = () => {
+    cleanups.forEach((fn) => fn());
+    cleanups.length = 0;
+  };
+  const register = (el, event, listener, options2) => {
+    el.addEventListener(event, listener, options2);
+    return () => el.removeEventListener(event, listener, options2);
+  };
+  const stopWatch = watch(() => [unrefElement(target), resolveUnref(options)], ([el, options2]) => {
+    cleanup();
+    if (!el)
+      return;
+    cleanups.push(...events.flatMap((event) => {
+      return listeners.map((listener) => register(el, event, listener, options2));
+    }));
+  }, { immediate: true, flush: "post" });
+  const stop = () => {
+    stopWatch();
+    cleanup();
+  };
+  tryOnScopeDispose(stop);
+  return stop;
+}
+let _iOSWorkaround = false;
+function onClickOutside(target, handler, options = {}) {
+  const { window: window2 = defaultWindow, ignore = [], capture = true, detectIframe = false } = options;
+  if (!window2)
+    return;
+  if (isIOS && !_iOSWorkaround) {
+    _iOSWorkaround = true;
+    Array.from(window2.document.body.children).forEach((el) => el.addEventListener("click", noop));
+  }
+  let shouldListen = true;
+  const shouldIgnore = (event) => {
+    return ignore.some((target2) => {
+      if (typeof target2 === "string") {
+        return Array.from(window2.document.querySelectorAll(target2)).some((el) => el === event.target || event.composedPath().includes(el));
+      } else {
+        const el = unrefElement(target2);
+        return el && (event.target === el || event.composedPath().includes(el));
       }
-    }, { passive: !0, capture: c }),
-    y(r, "pointerdown", (o) => {
-      const i = g(e);
-      i && (u = !o.composedPath().includes(i) && !p(o));
-    }, { passive: !0 }),
-    f && y(r, "blur", (o) => {
-      var i;
-      const l = g(e);
-      ((i = r.document.activeElement) == null ? void 0 : i.tagName) === "IFRAME" && !(l != null && l.contains(r.document.activeElement)) && n(o);
+    });
+  };
+  const listener = (event) => {
+    const el = unrefElement(target);
+    if (!el || el === event.target || event.composedPath().includes(el))
+      return;
+    if (event.detail === 0)
+      shouldListen = !shouldIgnore(event);
+    if (!shouldListen) {
+      shouldListen = true;
+      return;
+    }
+    handler(event);
+  };
+  const cleanup = [
+    useEventListener(window2, "click", listener, { passive: true, capture }),
+    useEventListener(window2, "pointerdown", (e) => {
+      const el = unrefElement(target);
+      if (el)
+        shouldListen = !e.composedPath().includes(el) && !shouldIgnore(e);
+    }, { passive: true }),
+    detectIframe && useEventListener(window2, "blur", (event) => {
+      var _a2;
+      const el = unrefElement(target);
+      if (((_a2 = window2.document.activeElement) == null ? void 0 : _a2.tagName) === "IFRAME" && !(el == null ? void 0 : el.contains(window2.document.activeElement)))
+        handler(event);
     })
   ].filter(Boolean);
-  return () => a.forEach((o) => o());
+  const stop = () => cleanup.forEach((fn) => fn());
+  return stop;
 }
-const I = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : typeof global < "u" ? global : typeof self < "u" ? self : {}, _ = "__vueuse_ssr_handlers__";
-I[_] = I[_] || {};
-var w;
-(function(e) {
-  e.UP = "UP", e.RIGHT = "RIGHT", e.DOWN = "DOWN", e.LEFT = "LEFT", e.NONE = "NONE";
-})(w || (w = {}));
-var q = Object.defineProperty, E = Object.getOwnPropertySymbols, K = Object.prototype.hasOwnProperty, J = Object.prototype.propertyIsEnumerable, S = (e, n, t) => n in e ? q(e, n, { enumerable: !0, configurable: !0, writable: !0, value: t }) : e[n] = t, X = (e, n) => {
-  for (var t in n || (n = {}))
-    K.call(n, t) && S(e, t, n[t]);
-  if (E)
-    for (var t of E(n))
-      J.call(n, t) && S(e, t, n[t]);
-  return e;
+const _global = typeof globalThis !== "undefined" ? globalThis : typeof window !== "undefined" ? window : typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : {};
+const globalKey = "__vueuse_ssr_handlers__";
+_global[globalKey] = _global[globalKey] || {};
+/* @__PURE__ */ new Map();
+var SwipeDirection;
+(function(SwipeDirection2) {
+  SwipeDirection2["UP"] = "UP";
+  SwipeDirection2["RIGHT"] = "RIGHT";
+  SwipeDirection2["DOWN"] = "DOWN";
+  SwipeDirection2["LEFT"] = "LEFT";
+  SwipeDirection2["NONE"] = "NONE";
+})(SwipeDirection || (SwipeDirection = {}));
+var __defProp = Object.defineProperty;
+var __getOwnPropSymbols = Object.getOwnPropertySymbols;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __propIsEnum = Object.prototype.propertyIsEnumerable;
+var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __spreadValues = (a, b) => {
+  for (var prop in b || (b = {}))
+    if (__hasOwnProp.call(b, prop))
+      __defNormalProp(a, prop, b[prop]);
+  if (__getOwnPropSymbols)
+    for (var prop of __getOwnPropSymbols(b)) {
+      if (__propIsEnum.call(b, prop))
+        __defNormalProp(a, prop, b[prop]);
+    }
+  return a;
 };
-const Y = {
+const _TransitionPresets = {
   easeInSine: [0.12, 0, 0.39, 0],
   easeOutSine: [0.61, 1, 0.88, 1],
   easeInOutSine: [0.37, 0, 0.63, 1],
@@ -109,26 +181,28 @@ const Y = {
   easeOutBack: [0.34, 1.56, 0.64, 1],
   easeInOutBack: [0.68, -0.6, 0.32, 1.6]
 };
-X({
-  linear: D
-}, Y);
-const Z = {
+__spreadValues({
+  linear: identity
+}, _TransitionPresets);
+const iclTooltip_vue_vue_type_style_index_0_lang = "";
+const __default__ = {
   name: "IclTooltip"
-}, te = /* @__PURE__ */ Object.assign(Z, {
+};
+const _sfc_main = /* @__PURE__ */ Object.assign(__default__, {
   props: {
     /**
      * Visible property when manual trigger is selected.
      */
     visible: {
       type: Boolean,
-      default: !1
+      default: false
     },
     /**
      * Disabled tooltip.
      */
     disabled: {
       type: Boolean,
-      default: !1
+      default: false
     },
     /**
      * Text of the tooltip.
@@ -187,49 +261,64 @@ const Z = {
      */
     noPadding: {
       type: Boolean,
-      value: !1
+      value: false
     }
   },
   emits: ["click-outside"],
-  setup(e, { emit: n }) {
-    const t = e;
-    Q((d) => ({
-      "82f0bbe6": e.offset
+  setup(__props, { emit }) {
+    const props = __props;
+    useCssVars((_ctx) => ({
+      "82f0bbe6": __props.offset
     }));
-    const r = v(null), s = v(!1);
-    H(r, () => {
-      t.disabled || (s.value = !1, n("click-outside"));
+    const target = ref(null);
+    const internalVisible = ref(false);
+    onClickOutside(target, () => {
+      if (props.disabled)
+        return;
+      internalVisible.value = false;
+      emit("click-outside");
     });
-    const c = W(() => t.trigger === "manual" ? t.visible : s.value), f = () => {
-      t.disabled || t.trigger !== "hover" || (s.value = !0);
-    }, u = () => {
-      t.disabled || t.trigger !== "hover" || (s.value = !1);
-    }, p = () => {
-      t.disabled || t.trigger !== "click" || (s.value = !0);
+    const isVisible = computed(() => props.trigger === "manual" ? props.visible : internalVisible.value);
+    const onMouseOver = () => {
+      if (props.disabled || props.trigger !== "hover")
+        return;
+      internalVisible.value = true;
     };
-    return (d, a) => (L(), M("div", {
-      ref_key: "target",
-      ref: r,
-      class: "icl-tooltip",
-      onMouseover: f,
-      onMouseleave: u,
-      onClick: p
-    }, [
-      O(d.$slots, "default"),
-      V("div", {
-        class: $(["tooltip", { [`${e.color} ${e.position}`]: !0, visible: P(c), "no-padding": e.noPadding }]),
-        style: j({
-          "min-width": e.minWidth,
-          "max-width": e.maxWidth
-        })
+    const onMouseLeave = () => {
+      if (props.disabled || props.trigger !== "hover")
+        return;
+      internalVisible.value = false;
+    };
+    const onClick = () => {
+      if (props.disabled || props.trigger !== "click")
+        return;
+      internalVisible.value = true;
+    };
+    return (_ctx, _cache) => {
+      return openBlock(), createElementBlock("div", {
+        ref_key: "target",
+        ref: target,
+        class: "icl-tooltip",
+        onMouseover: onMouseOver,
+        onMouseleave: onMouseLeave,
+        onClick
       }, [
-        O(d.$slots, "tooltip", {}, () => [
-          F(R(e.text), 1)
-        ])
-      ], 6)
-    ], 544));
+        renderSlot(_ctx.$slots, "default"),
+        createElementVNode("div", {
+          class: normalizeClass(["tooltip", { [`${__props.color} ${__props.position}`]: true, visible: unref(isVisible), "no-padding": __props.noPadding }]),
+          style: normalizeStyle({
+            "min-width": __props.minWidth,
+            "max-width": __props.maxWidth
+          })
+        }, [
+          renderSlot(_ctx.$slots, "tooltip", {}, () => [
+            createTextVNode(toDisplayString(__props.text), 1)
+          ])
+        ], 6)
+      ], 544);
+    };
   }
 });
 export {
-  te as IclTooltip
+  _sfc_main as IclTooltip
 };
