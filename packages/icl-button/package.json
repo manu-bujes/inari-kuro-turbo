@@ -1,6 +1,6 @@
 {
   "name": "@inari/icl-button",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "",
   "author": "",
   "license": "ISC",
@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "@inari/assets": "^0.0.1",
-    "@inari/icl-icon": "^0.2.3",
+    "@inari/icl-icon": "^0.3.0",
     "@inari/icl-tooltip": "^0.1.3"
   },
   "devDependencies": {
