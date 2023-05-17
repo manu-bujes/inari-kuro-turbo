@@ -8,7 +8,7 @@ describe('icl-icon.vue', () => {
 
   const getWrapper = (params) => mount(IclIcon, params);
 
-  test('mount component prueba', async () => {
+  test('mount component prueba commits', async () => {
     expect(IclIcon).toBeTruthy();
     const wrapper = getWrapper({ props: { icon } });
 
