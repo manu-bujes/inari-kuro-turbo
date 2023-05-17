@@ -7,9 +7,7 @@
   "command": {
     "version": {
       "allowBranch": ["main", "feature/versioning-with-lerna"],
-      "conventionalCommits": true,
-      "noPush": true,
-      "noPrivate": true
+      "conventionalCommits": true
     },
     "publish": {
       "noPrivate": true
